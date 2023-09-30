@@ -1,51 +1,46 @@
-# Team Tonic
+# Short-term TODO
+So we have 3 weeks left. Lets get to work.
 
-## 🤖🤖 Welcome to Team Tonic! 🤖🤖
 
-### About Us
+## Requirements
 
-At Team Tonic, we're not your average tech team. We're a group of passionate engineers and AI enthusiasts who are dedicated to pushing the boundaries of what autonomous agents can achieve. Our mission? To build AI-powered bots that not only crush performance benchmarks but also outperform anything you've ever seen before.
+Everyone has had a chance to poke around the materials and tools available. So lets iron out the plan. We need a list of requirements for the project. These are the boxes that have to be ticked for the hack a thon.
 
-### Part 1: Improve Auto-Gpt - Priority area for improvements
+-   Scrape and Synthesize
+-   Data Mastery
+-   Coding Excellence
+-   Open-ended Agent Protocol
 
-- Improve 🤖autoreply using 🛺autogen library
-- 🤹🏻‍♀️multimodal input
-- multimedia 📺output
-- 👨🏻‍👩🏾‍👧🏼‍👦🏼multi agent environments using autogen library
-- New 📎interface using next.js / gradio
-- Improve 💭Tree-of-thought in autogpt logic
+We want to make sure we hit all the sponsors. 
 
-### Features
+- AutoGPT
+- Weviate
+- Chroma
+- MetaGPT
 
-- 💪🏻 Outclassing BeeBot: We aim to beat the benchmarks set by beebot and more.
-- 🧠 More Popular: It's more fun for folks when they can get multimedia and use cameras , mics, and multifile input.
-- 💬 Decision Support: Autogpt should be useful to its user to make real world decisions.
+## Ideas
 
-### Project 2: Evaluation Environment
+### Tonic's
 
-- 🌐 Following the Guidelines
-- 🤓 Testing Autogpt next to community agents
-- 🚀 Proposing future testing.
+Multi agent orchestration
+Code stuff
+Agent flow
+Tree of thought
+Add function calls
+Rework the engine
+UI
+Multi media in
+Multi media out
 
-### Join the Conversation
+### Bako
 
-Want to be part of our journey or have questions about our projects? Join our Discord server and connect with us!
+Build a set of agents using modular tools, then break the agents down and let the orchestration model build new agents from pool of tools and preconstructed agents. I am going to focus on building a agent piloted web scraper that can collect data on a topic and generate a data set. This knocks out a bunch of sponsors and categories in one shot. I will make sure to keep it modular.
 
-### Discord
+### Tooling
 
-[Join our discord](https://discord.gg/9V6JkPEC)
+We are considering our tooling. The back end probably will be mostly in python and we are considering gradio or nextjs for the front end. We'd love thoughts and ideas on this.
 
-#### Get Involved
+### You Ideas
 
-- 🌟 Star our projects on GitHub to show your support.
-- 🐞 Report issues or suggest improvements.
-- 💡 Contribute code, documentation, or ideas.
-- 📢 Share our projects with your network.
+Comment on this to throw in your thoughts and ideas. Nothing is set in stone, we are still at the planning stage so dont be afraid to throw out ideas. Everything should be thrown at the walls and we'll see what sticks. 
 
-#### Stay Updated
-
-Don't miss out on our latest developments and announcements. Follow us on GitHub and Twitter!
-
-Discord Follow on GitHub Follow on Twitter
-
-Thank you for joining us on this exciting journey of innovation and discovery! Together, we'll redefine what's possible in the world of AI. 🚀🤖
