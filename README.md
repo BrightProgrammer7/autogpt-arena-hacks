@@ -7,6 +7,31 @@ Hey there, amazing hackers! 🌟 It's time to dive into the exciting world of Au
 💻 Coding Excellence
 🌐 Open-ended Agent Protocol](https://github.com/orgs/team-tonic-arena-hacks/projects)
 
+
+## 💡 Ideas
+
+- 🌐 Multi-Agent Orchestration
+
+- 📜 Produce Code
+
+- 👥 Multiple Agents
+
+- 🌳 New Tree of Thought
+
+- 📞 Add Function Calls
+
+- 🔧 Rework the Engine
+
+- 🛠️ Multiple Tools / Focus on Scraping
+
+- 🖼️ UI: Multi-Media In, Multi-Media Out
+
+### 🛠️ Tooling
+We're currently brainstorming our tooling options. The backend is leaning towards Python, and we're considering using Gradio or Next.js for the frontend. We'd love to hear your thoughts and ideas on this! 💡🔨
+
+### 💬 Your Ideas
+Don't hold back! 💭 Share your thoughts and ideas in the comments below. We're in the planning stage, and nothing is set in stone. Throw all your ideas at the wall, and let's see what sticks! 🧙‍♂️🧙‍♀️ Let's make this hackathon legendary! 🚀💥
+
 ## 📋 Requirements
 🌟 Clone AutoGPT 🌟
 Start by cloning the AutoGPT repo - it's your ticket to success! 🚀 You'll get an amazing boilerplate that plays nicely with the benchmark, AutoGPT's user-friendly interface, and a bunch of monitoring and logging tools to supercharge your development journey. Let's get started!
@@ -39,18 +64,3 @@ Master the art of coding by crafting functions, CLI games, password shorteners, 
 
 Get creative beyond the listed challenges while sticking to the agent protocol. Don't forget to provide a comprehensive demo video because this category is evaluated subjectively. 📽️🎉
 
-## 💡 Ideas
-🌐 Multi-Agent Orchestration
-📜 Produce Code
-👥 Multiple Agents
-🌳 New Tree of Thought
-📞 Add Function Calls
-🔧 Rework the Engine
-🛠️ Multiple Tools / Focus on Scraping
-🖼️ UI: Multi-Media In, Multi-Media Out
-
-### 🛠️ Tooling
-We're currently brainstorming our tooling options. The backend is leaning towards Python, and we're considering using Gradio or Next.js for the frontend. We'd love to hear your thoughts and ideas on this! 💡🔨
-
-### 💬 Your Ideas
-Don't hold back! 💭 Share your thoughts and ideas in the comments below. We're in the planning stage, and nothing is set in stone. Throw all your ideas at the wall, and let's see what sticks! 🧙‍♂️🧙‍♀️ Let's make this hackathon legendary! 🚀💥
