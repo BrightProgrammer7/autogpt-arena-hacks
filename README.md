@@ -11,19 +11,12 @@ Hey there, amazing hackers! 🌟 It's time to dive into the exciting world of Au
 ## 💡 Ideas
 
 - 🌐 Multi-Agent Orchestration
-
 - 📜 Produce Code
-
 - 👥 Multiple Agents
-
 - 🌳 New Tree of Thought
-
 - 📞 Add Function Calls
-
 - 🔧 Rework the Engine
-
 - 🛠️ Multiple Tools / Focus on Scraping
-
 - 🖼️ UI: Multi-Media In, Multi-Media Out
 
 ### 🛠️ Tooling
