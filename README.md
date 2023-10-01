@@ -1,46 +1,55 @@
-# Short-term TODO
-So we have 3 weeks left. Lets get to work.
+## 🚀 Short-term TODO - Let's Hack Away! 🚀
+Hey there, amazing hackers! 🌟 It's time to dive into the exciting world of AutoGPT and set our plans in stone. We need to outline the project's requirements that are essential for this epic hackathon adventure. Here are the key boxes you need to tick for success:
 
+📦 Scrape and Synthesize
+📊 Data Mastery
+💻 Coding Excellence
+🌐 Open-ended Agent Protocol
 
-## Requirements
+## 📋 Requirements
+🌟 Clone AutoGPT 🌟
+Start by cloning the AutoGPT repo - it's your ticket to success! 🚀 You'll get an amazing boilerplate that plays nicely with the benchmark, AutoGPT's user-friendly interface, and a bunch of monitoring and logging tools to supercharge your development journey. Let's get started!
 
-Everyone has had a chance to poke around the materials and tools available. So lets iron out the plan. We need a list of requirements for the project. These are the boxes that have to be ticked for the hack a thon.
+## 📈 Benchmarking & Leaderboard 📈
+As you forge ahead, constantly test your agent's performance against the benchmark. Our hackathon will be judged primarily based on these benchmarks. But guess what? We also have some awesome human judges ready to assess your brilliance when needed. 🧠💡 So show us what you've got, rockstars!
 
--   Scrape and Synthesize
--   Data Mastery
--   Coding Excellence
--   Open-ended Agent Protocol
+#### 🌟 General Challenge 🌟
+💰 Prize: $15,000 Cash Prize 💰
 
-We want to make sure we hit all the sponsors. 
+The top-performing generalist agent will earn the prestigious title of the primary AutoGPT in our repository. Break all the boundaries, exceed those benchmarks, and let your excellence shine without any restrictions!
 
-- AutoGPT
-- Weviate
-- Chroma
-- MetaGPT
+#### 💥 Scrape and Synthesize 💥
+💰 Prize: $3,500 💰
 
-## Ideas
+Your mission, should you choose to accept it: extract data from the web and create datasets, summaries, and plans as requested. Can you handle the challenge?
 
-### Tonic's
+#### 📊 Data Mastery 📊
+💰 Prize: $3,500 💰
 
-Multi agent orchestration
-Code stuff
-Agent flow
-Tree of thought
-Add function calls
-Rework the engine
-UI
-Multi media in
-Multi media out
+Become a data wizard by performing essential data science tasks like imputation, labeling, and sorting. Show us your data manipulation skills!
 
-### Bako
+#### 🚀 Coding Excellence 🚀
+💰 Prizes: 🥇 1st Place - $4,000 🥈 2nd Place - $1,000
 
-Build a set of agents using modular tools, then break the agents down and let the orchestration model build new agents from pool of tools and preconstructed agents. I am going to focus on building a agent piloted web scraper that can collect data on a topic and generate a data set. This knocks out a bunch of sponsors and categories in one shot. I will make sure to keep it modular.
+Master the art of coding by crafting functions, CLI games, password shorteners, web servers, and more. Code like there's no tomorrow!
 
-### Tooling
+##### 🌐 Open-ended Agent Protocol 🌐
+💰 Prize: $3,000 💰
 
-We are considering our tooling. The back end probably will be mostly in python and we are considering gradio or nextjs for the front end. We'd love thoughts and ideas on this.
+Get creative beyond the listed challenges while sticking to the agent protocol. Don't forget to provide a comprehensive demo video because this category is evaluated subjectively. 📽️🎉
 
-### You Ideas
+## 💡 Ideas
+🌐 Multi-Agent Orchestration
+📜 Produce Code
+👥 Multiple Agents
+🌳 New Tree of Thought
+📞 Add Function Calls
+🔧 Rework the Engine
+🛠️ Multiple Tools / Focus on Scraping
+🖼️ UI: Multi-Media In, Multi-Media Out
 
-Comment on this to throw in your thoughts and ideas. Nothing is set in stone, we are still at the planning stage so dont be afraid to throw out ideas. Everything should be thrown at the walls and we'll see what sticks. 
+### 🛠️ Tooling
+We're currently brainstorming our tooling options. The backend is leaning towards Python, and we're considering using Gradio or Next.js for the frontend. We'd love to hear your thoughts and ideas on this! 💡🔨
 
+### 💬 Your Ideas
+Don't hold back! 💭 Share your thoughts and ideas in the comments below. We're in the planning stage, and nothing is set in stone. Throw all your ideas at the wall, and let's see what sticks! 🧙‍♂️🧙‍♀️ Let's make this hackathon legendary! 🚀💥
