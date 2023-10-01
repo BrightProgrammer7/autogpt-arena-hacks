@@ -5,7 +5,7 @@ Hey there, amazing hackers! 🌟 It's time to dive into the exciting world of Au
 [📦 Scrape and Synthesize
 📊 Data Mastery
 💻 Coding Excellence
-🌐 Open-ended Agent Protocol](https://github.com/orgs/team-tonic-arena-hacks/projects))
+🌐 Open-ended Agent Protocol](https://github.com/orgs/team-tonic-arena-hacks/projects)
 
 ## 📋 Requirements
 🌟 Clone AutoGPT 🌟
