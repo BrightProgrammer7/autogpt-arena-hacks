@@ -1,6 +1,6 @@
 ## 🚀 Projects! 🚀https://github.com/orgs/team-tonic-arena-hacks/projects)
 
-Hey there, amazing hackers! 🌟 It's time to dive into the exciting world of AutoGPT and set our plans in stone. We need to outline the project's requirements that are essential for this epic hackathon adventure. Here are the key boxes you need to tick for success:
+Hey there, amazing hackers! 🌟 This is what we're building here (it's a better autogpt) :
 
 [📦 Scrape and Synthesize
 📊 Data Mastery
