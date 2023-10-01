@@ -1,0 +1,3 @@
+[submodule "src/vectorstore/weaviate"]
+	path = src/vectorstore/weaviate
+	url = https://github.com/weaviate/weaviate.git
