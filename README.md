@@ -20,10 +20,16 @@ Hey there, amazing hackers! 🌟 It's time to dive into the exciting world of Au
 - 🖼️ UI: Multi-Media In, Multi-Media Out
 
 ### 🛠️ Tooling
-We're currently brainstorming our tooling options. The backend is leaning towards Python, and we're considering using Gradio or Next.js for the frontend. We'd love to hear your thoughts and ideas on this! 💡🔨
+
+- 🐍 Python
+- 🛺🤖Autogen
+- 🧱 gradio
+- ☕ js/ts/java/vercel
+- ⚒️🤖 Auto-GPT-FORGE
+- 🦜 Langchain
 
 ### 💬 Your Ideas
-Don't hold back! 💭 Share your thoughts and ideas in the comments below. We're in the planning stage, and nothing is set in stone. Throw all your ideas at the wall, and let's see what sticks! 🧙‍♂️🧙‍♀️ Let's make this hackathon legendary! 🚀💥
+Don't hold back! 💭 Share your thoughts and ideas in the Issues, discussions and projects. We're in the planning stage, and nothing is set in stone. Throw all your ideas at the wall, and let's see what sticks! 🧙‍♂️🧙‍♀️ Let's make this hackathon legendary! 🚀💥
 
 ## 📋 Requirements
 🌟 Clone AutoGPT 🌟
