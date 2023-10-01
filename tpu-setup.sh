@@ -23,8 +23,4 @@ curl -sSL https://install.python-poetry.org | python3 -
 pip install wheel setuptools
 pip install jupyter lab
 
-gcloud compute disks create diskodisk --size 300 --type pd-balanced --replica-zones us-central1-f
-
-gcloud alpha compute tpus tpu-vm attach-disk --zone "us-central1-f" "tpu-vm" --project "bakobiibizo-b8d9f" --disk "disk-mikes"
-
 sudo lsblk
