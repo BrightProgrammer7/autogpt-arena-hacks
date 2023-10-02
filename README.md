@@ -34,9 +34,11 @@ Don't hold back! 💭 Share your thoughts and ideas in the Issues, discussions a
 ## 📋 Requirements
 
 Clone all the repos :
+
 ```bash
 for x in gh repo list team-tonic-arena-hacks | cut -f1; do git clone https://github.com/$x; done
 ```
+
 Please make PRs to AutoGPT Forge in this organisation. 
 
 ## 📈 Benchmarking & Leaderboard 📈
