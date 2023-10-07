@@ -1,5 +1,16 @@
-asyncio
 requests
+time
+torchvision
+asyncio
+xgboost
+pandas
+numpy
+matplotlib
 pyautogen[all]
+flaml[all]
+lightgbm
+openml
+transformers
+torch
 unstructured[all]
 weaviate
