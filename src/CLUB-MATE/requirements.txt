@@ -1,1 +1,5 @@
-pyautogen
+asyncio
+requests
+pyautogen[all]
+unstructured[all]
+weaviate
