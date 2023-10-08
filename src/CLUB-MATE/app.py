@@ -1,3 +1,5 @@
+#Import libraries and utilities
+
 import autogen
 from autogen.retrieve_utils import TEXT_FORMATS
 from autogen.agentchat.contrib.retrieve_assistant_agent import RetrieveAssistantAgent
@@ -24,7 +26,6 @@ llm_config={
     "config_list": config_list,
     "temperature": 0,
 }
-### CREATE AGENTS HERE :
 
 gpt4_config = {
     "seed": 42,  # change the seed for different trials
@@ -32,11 +33,45 @@ gpt4_config = {
     "config_list": config_list_gpt4,
     "request_timeout": 300,
 }
+
+### Multi-User Multi-Agent : Construct USERS
+
 user_proxy = autogen.UserProxyAgent(
-   name="Admin",
+   name="User_Admin",
    system_message="A human admin. Interact with the planner to discuss the plan. Plan execution needs to be approved by this admin.",
    code_execution_config=False,
 )
+user_manager = autogen.UserProxyAgent(
+    name="User_Manager",
+    human_input_mode="TERMINATE",
+    max_consecutive_auto_reply=100,
+    code_execution_config={"work_dir": "XXXXXX"},###REMEMBER TO CHANGE
+    function_map={"ask_expert": ask_expert},     ###REMEMBER TO CHANGE
+)
+
+### ISSUE : HOW TO CREATE MULTIPLE USERS ON THE FLY?
+
+### Multi-User Multi-Agent : Construct Agents
+
+### CREATE AGENTS HERE :
+
+
+#Example Student:
+def ask_expert(message):
+    assistant_for_expert = autogen.AssistantAgent(
+        name="assistant_for_expert",
+        llm_config={
+            "temperature": 0,
+            "config_list": config_list,
+        },
+    )
+    expert = autogen.UserProxyAgent(
+        name="expert",
+        human_input_mode="ALWAYS",
+        code_execution_config={"work_dir": "expert"},
+    )
+
+# Example Research:
 engineer = autogen.AssistantAgent(
     name="Engineer",
     llm_config=gpt4_config,
@@ -69,17 +104,8 @@ critic = autogen.AssistantAgent(
     system_message="Critic. Double check plan, claims, code from other agents and provide feedback. Check whether the plan includes adding verifiable info such as source URL.",
     llm_config=gpt4_config,
 )
-#groupchat = autogen.GroupChat(agents=[user_proxy, engineer, scientist, planner, executor, critic], messages=[], max_round=50)
-#manager = autogen.GroupChatManager(groupchat=groupchat, llm_config=gpt4_config)
-### Example 
-#user_proxy.initiate_chat(
-#    manager,
-#    message="""
-#find papers on LLM applications from arxiv in the last week, create a markdown table of different domains.
-#""",
-#)
 
-# 1. create an RetrieveAssistantAgent instance named "assistant"
+### RetrieveAssistantAgent instance named "assistant"
 assistant = RetrieveAssistantAgent(
     name="assistant", 
     system_message="You are a helpful assistant.",
@@ -110,30 +136,7 @@ ragproxyagent = RetrieveUserProxyAgent(
     },
 )
 
-### Multi-User Multi-Agent Construct Agents :
-#Example Student:
-def ask_expert(message):
-    assistant_for_expert = autogen.AssistantAgent(
-        name="assistant_for_expert",
-        llm_config={
-            "temperature": 0,
-            "config_list": config_list,
-        },
-    )
-    expert = autogen.UserProxyAgent(
-        name="expert",
-        human_input_mode="ALWAYS",
-        code_execution_config={"work_dir": "expert"},
-    )
-
-    expert.initiate_chat(assistant_for_expert, message=message)
-    expert.stop_reply_at_receive(assistant_for_expert)
-    # expert.human_input_mode, expert.max_consecutive_auto_reply = "NEVER", 0
-    # final message sent from the expert
-    expert.send("summarize the solution and explain the answer in an easy-to-understand way", assistant_for_expert)
-    # return the last message the expert received
-    return expert.last_message()["content"]
-assistant_for_student = autogen.AssistantAgent(
+    assistant_for_student = autogen.AssistantAgent(
     name="assistant_for_student",
     system_message="You are a helpful assistant. Reply TERMINATE when the task is done.",
     llm_config={
@@ -163,14 +166,31 @@ assistant_for_student = autogen.AssistantAgent(
     }
 )
 
-student = autogen.UserProxyAgent(
-    name="student",
-    human_input_mode="TERMINATE",
-    max_consecutive_auto_reply=10,
-    code_execution_config={"work_dir": "student"},
-    function_map={"ask_expert": ask_expert},
-)
+
+### Initiate Chat
+
+## Example Group Chat / Research :
+
+#groupchat = autogen.GroupChat(agents=[user_proxy, engineer, scientist, planner, executor, critic], messages=[], max_round=50)
+#manager = autogen.GroupChatManager(groupchat=groupchat, llm_config=gpt4_config)
+### Example 
+#user_proxy.initiate_chat(
+#    manager,
+#    message="""
+#find papers on LLM applications from arxiv in the last week, create a markdown table of different domains.
+#""",
+#)
+
+## Example Group Chat / Student :
+    expert.initiate_chat(assistant_for_expert, message=message)
+    expert.stop_reply_at_receive(assistant_for_expert)
+    # expert.human_input_mode, expert.max_consecutive_auto_reply = "NEVER", 0
+    # final message sent from the expert
+    expert.send("summarize the solution and explain the answer in an easy-to-understand way", assistant_for_expert)
+    # return the last message the expert received
+#    return expert.last_message()["content"]
 # Multi-User Multi-Agent :
+
 # the assistant receives a message from the student, which contains the task description
 student.initiate_chat(
     assistant_for_student,
