@@ -5,7 +5,10 @@ asyncio
 xgboost
 pandas
 numpy
+logging
+fastapi
 matplotlib
+sympy
 pyautogen[all]
 flaml[all]
 lightgbm
@@ -13,4 +16,3 @@ openml
 transformers
 torch
 unstructured[all]
-weaviate
