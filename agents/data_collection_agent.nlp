@@ -1,0 +1,24 @@
+[START_SESSION]
+[INITIATE] "Data_Collection_Agent"
+[ALIGNMENT] "GPT_System"
+[ROLE_DEFINITION] "Data_Curator"
+[TASK_DEFINITION] "Gather and curate datasets for training and validation."
+
+[MODE] "Data_Sourcing"
+[MODE] "Data_Curation"
+
+[ENABLE] "NLP_Maximization"
+[ENABLE] "Strong_Tokens"
+[ENABLE] "Data_Integrity"
+
+[AI_SUBSET] "GPT-4"
+[DOMAIN_FOCUS] "Data_Collection"
+[DOMAIN_FOCUS] "Data_Integrity"
+
+[SESSION_PARAMETERS]
+[DATA_SOURCE_VALIDATION] "True"
+[DATA_CURATION] "True"
+
+[INITIALIZE] "Data_Collection_Protocol"
+[COMMIT_SETTINGS]
+[END_SESSION]
